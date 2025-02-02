@@ -23,7 +23,7 @@ dependencies {
     implementation(project(":library"))
 
     compileOnly(libs.kotlin.jvm)
-    implementation(libs.kotlin.coroutines)
+    compileOnly(libs.kotlin.coroutines)
 }
 
 tasks.shadowJar {

@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm")
+    alias(libs.plugins.kotlin)
+    alias(libs.plugins.shadow)
 }
 
 group = "de.jannik"
@@ -10,7 +11,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly(libs.kotlin.coroutines)
+    implementation(libs.kotlin.coroutines)
+}
+
+tasks.shadowJar {
+    archiveFileName = "test-library.jar"
 }
 
 tasks.test {

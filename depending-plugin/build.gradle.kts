@@ -28,6 +28,8 @@ dependencies {
 
 tasks.shadowJar {
     archiveFileName = "test-depending-velocity.jar"
+    relocate("kotlin", "de.jannik.kotlin")
+    relocate("kotlinx", "de.jannik.kotlinx")
 }
 
 tasks.test {
