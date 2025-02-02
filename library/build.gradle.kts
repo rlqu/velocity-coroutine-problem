@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.kotlin.coroutines)
+    compileOnly(libs.kotlin.coroutines)
 }
 
 tasks.shadowJar {
