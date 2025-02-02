@@ -39,7 +39,7 @@ fun onProxyInitialization(event: ProxyInitializeEvent) {
     val test = Test()
 
     /**
-    * Won't throw an error!
+    * Will throw an error!
     */
     CoroutineScope(Dispatchers.Default).launch {
         test.testFunction("DEPENDING")
